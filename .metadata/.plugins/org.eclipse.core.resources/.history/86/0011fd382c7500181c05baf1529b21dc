@@ -1,0 +1,47 @@
+
+ //抽象类的必要性
+ //当父类function没有用到的时候，用abstract	来修饰这个function.
+ //而这个function可以只用引用，可以不用具体的里面的语句
+ //当子类会覆盖父类的function的时候，可以用abstract.
+ 
+package x20180620;
+
+public class abstract_class {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+abstract class Animal2   //abstract class
+{
+	String name;
+	int age;
+
+	
+	//动物会叫
+	abstract public void cry();
+	public void aaa()
+	{
+		
+	}
+	
+}
+// 当一个类继承的父类是抽象类的时候
+//要把父类里的抽象function全部实现
+class cat2 extends Animal2
+{
+	public void cry()     //实现父类的cry
+	{
+		
+	}
+}
+
+
+
+
+
+
+

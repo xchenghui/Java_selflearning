@@ -1,0 +1,50 @@
+package com.sellTicket;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//定义三个售票窗口
+		TicketWindow tw = new TicketWindow();
+	}
+
+}
+
+//售票窗口类
+class TicketWindow implements Runnable
+{
+	private int nums = 2000; //2000 tickets
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		while(true)
+		{
+			//判断是否还有票
+			if(nums >0)
+			{
+				System.out.println("正在售出  " + nums + "票");
+				nums--;
+			}else
+			{
+				//售票结束 
+				break;
+			}
+			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

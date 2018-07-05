@@ -1,0 +1,86 @@
+/*
+ * 事件处理机制
+ */
+
+package com.test1;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+public class Demo1_1 extends JFrame implements ActionListener{
+
+	//定义一个panel
+	JPanel mp =null;
+	
+	JButton jb1 = null;
+	JButton jb2 = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Demo1_1 demo = new Demo1_1();
+	}
+
+	public Demo1_1()
+	{
+		mp = new JPanel();
+		jb1 = new JButton("黑色");
+		jb2 = new JButton("红色");
+		
+		this.add(jb1,BorderLayout.NORTH);
+		mp.setBackground(Color.black);
+		this.add(mp);
+		this.add(jb2,BorderLayout.SOUTH);
+		
+		
+		//注册监听
+		jb1.addActionListener(this);
+		jb2.addActionListener(this);
+		this.setSize(200,150);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	}
+
+	//对事件处理的解决方法
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println("OK");
+	}
+}
+
+class MyPanel extends JPanel
+{
+	public void paint(Graphics g)
+	{
+		super.paint(g);
+		//g.fillRect(0, 0, 200, height);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

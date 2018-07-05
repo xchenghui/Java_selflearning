@@ -1,0 +1,31 @@
+/*
+ * 如何通过继承Thread来开发线程
+ */
+
+
+package com.x20180702;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+class Cat extends Thread
+{
+	
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+/*
+ * 两个线程同时运动的案例
+ */
+
+package com.test3;
+
+public class Demo10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+//算数学题
+class Bird implements Runnable
+{
+
+	int n =0;
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

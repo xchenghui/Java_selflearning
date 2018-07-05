@@ -1,0 +1,15 @@
+/*
+ * 加深对事件处理机制的理解
+ * 1.通过上下左右键来控制小球的移动（位置）
+ */
+
+package com.test2;
+
+public class Demo1_2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

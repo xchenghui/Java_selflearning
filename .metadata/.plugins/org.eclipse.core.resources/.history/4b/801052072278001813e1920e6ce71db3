@@ -1,0 +1,71 @@
+/*
+ * 演示java集合的用法
+ */
+
+package x20180624;
+import java.util.*;
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//定义ArrayList 对象
+		ArrayList al = new ArrayList();
+		System.out.println("al大小" + al.size());
+		//向al中加入数据（类型是object）
+		Clerk clerk1 = new Clerk("Mike",50,15000);
+		Clerk clerk2 = new Clerk("NIhao",50,16000);
+		//将clerk1加入到al中
+		al.add(clerk1);
+		al.add(clerk2);
+		System.out.println("al大小" + al.size());
+		
+		//如何访问al中的数据
+		//访问mike，
+		Clerk temp = (Clerk)al.get(0);
+		System.out.println("First person is "+ temp.getName());
+	}
+
+}
+
+//定义一个员工类
+class Clerk
+{
+	private String name;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public float getSal() {
+		return sal;
+	}
+
+	public void setSal(float sal) {
+		this.sal = sal;
+	}
+
+	private int age;
+	private float sal;
+	
+	public Clerk(String name, int age, float sal)
+	{
+		this.age = age;
+		this.name = name;
+		this.sal = sal;
+	}
+}
+
+
+
+

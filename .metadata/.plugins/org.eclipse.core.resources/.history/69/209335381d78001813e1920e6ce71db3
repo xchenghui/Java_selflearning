@@ -1,0 +1,14 @@
+/*
+ * 演示java集合的用法
+ */
+
+package x20180624;
+import java.util.*;
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

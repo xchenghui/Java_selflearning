@@ -1,0 +1,117 @@
+/*
+ * 两个线程同时运动的案例
+ */
+
+package com.test3;
+
+public class Demo10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pig pig = new Pig(10);
+		Bird bird = new Bird(10);
+		
+		Thread t1 = new Thread();
+		Thread t2 = new Thread();
+		t1.start();
+		t2.start();
+	}
+
+}
+
+//打印
+class Pig implements Runnable
+{
+	int n =0;
+	int times = 0;
+	public Pig(int n )
+	{
+		this.n = n;
+	}
+	public void run()
+	{
+		while(true)
+		{
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			times++;
+			System.out.println("我是一个县城， 在输出第   "+ times+ "Hello, World" );
+			
+			if(times == n)
+			{
+				break;
+			}
+		}
+	}
+}
+
+
+
+
+//算数学题
+class Bird implements Runnable
+{
+
+	int n =0;
+	int result =0;
+	int times =0;
+	public Bird(int n)
+	{
+		this.n = n;
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		while(true)
+		{
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			result+=(++times);
+			System.out.println("当前结果" + result);
+			if(times ==n)
+			{
+				System.out.println("Final result" + result);
+				break;
+			}
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

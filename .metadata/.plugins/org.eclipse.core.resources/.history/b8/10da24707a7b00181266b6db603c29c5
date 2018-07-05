@@ -1,0 +1,43 @@
+/*
+ * java绘图原理
+ */
+
+package com.x20180629;
+import javax.swing.*;
+import java.awt.*;
+public class CircleDraw {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+//定义一个MyPanel
+class Mypanel extends JPanel
+{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

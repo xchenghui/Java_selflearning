@@ -1,0 +1,69 @@
+/*
+ * 接口的见解
+ * interface
+ * 是没有内容的function,把他们聚集在一起
+ * 当有其他类使用的时候，在加入具体的内容
+ */
+package x20180620;
+
+public class jiekou1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Computer c = new Computer();
+		Camera cA = new Camera();
+		c.useUsb(cA);         //直接用camera的cA，类似多态
+	}
+
+}
+interface kkk
+{
+	public int a = 0;
+	int a1 =1;
+}
+interface Usb
+{
+	//声明两个function
+	public void start();
+	public void stop();
+}
+
+//当一个类实现了一个接口，
+//就要求该类把这个接口的所有function实现
+class Camera implements Usb,kkk
+{
+	public void start()
+	{
+		System.out.println("this is camera--start");
+	}
+	public void stop()
+	{
+		System.out.println("This is camera--stop");
+	}
+}
+
+
+class phone implements Usb
+{
+	public void start()
+	{
+		System.out.println("this is phone--start");
+	}
+	public void stop()
+	{
+		System.out.println("This is phone--stop");
+	}
+}
+
+class Computer
+{
+	public void useUsb(Usb usb)
+	{
+		usb.start();
+		usb.stop();
+	}
+}
+
+
+
+

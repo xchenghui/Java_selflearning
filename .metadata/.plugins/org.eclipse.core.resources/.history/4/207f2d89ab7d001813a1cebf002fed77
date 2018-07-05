@@ -1,0 +1,64 @@
+/*
+ * 事件处理机制
+ */
+
+package com.test1;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+public class Demo1_1 extends JFrame{
+
+	//定义一个panel
+	MyPanel mp =null;
+	
+	JButton jb1 = null;
+	JButton jb2 = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public Demo1_1()
+	{
+		mp = new MyPanel();
+		jb1 = new JButton("黑色");
+		jb2 = new JButton("红色");
+	}
+}
+
+class MyPanel extends JPanel
+{
+	public void paint(Graphics g)
+	{
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+package com.test2;
+import java.awt.*;
+import javax.swing.*;
+public class Demo9 {
+
+	MyPanel mp = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public Demo9()
+	{
+		
+	}
+}
+
+class MyPanel extends JPanel
+{
+	public void paint(Graphics g)
+	{
+		super.paint(g);
+	}
+}

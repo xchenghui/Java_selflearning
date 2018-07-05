@@ -1,0 +1,39 @@
+/*
+ * 演示线程注意事项
+ */
+
+package com.x20180703;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class Cat extends Thread
+{
+	public void run()
+	{
+		System.out.println("11");
+	}
+}
+
+
+class Dog extends Thread
+{
+	
+}
+
+
+
+
+
+
+
+
+
+
+

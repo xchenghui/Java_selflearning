@@ -1,0 +1,75 @@
+package com.test2;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+
+import javax.swing.*;
+public class Demo9 extends JFrame{
+
+	MyPanel mp = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Demo9 demo = new Demo9();
+	}
+	public Demo9()
+	{
+		mp = new MyPanel();
+		
+		this.add(mp);
+		
+		
+		//注册监听
+		this.addMouseListener(mp);
+		
+		
+		
+		this.setSize(400,300);
+		this.setVisible(true);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+	}
+}
+
+
+//1.让MyPanel知道鼠标按下的消息，并且知道点击的位置（x，y）
+//2.让MyPanel知道哪个键按下。
+
+class MyPanel extends JPanel implements MouseListener
+{
+	public void paint(Graphics g)
+	{
+		super.paint(g);
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	//鼠标移动到
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}

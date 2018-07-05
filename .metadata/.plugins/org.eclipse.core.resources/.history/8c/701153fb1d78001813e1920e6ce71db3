@@ -1,0 +1,35 @@
+/*
+ * 演示java集合的用法
+ */
+
+package x20180624;
+import java.util.*;
+public class Demo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//定义ArrayList 对象
+		ArrayList al = new ArrayList();
+		System.out.println("al大小" + al.size());
+	}
+
+}
+
+//定义一个员工类
+class Clerk
+{
+	private String name;
+	private int age;
+	private float sal;
+	
+	public Clerk(String name, int age, float sal)
+	{
+		this.age = age;
+		this.name = name;
+		this.sal = sal;
+	}
+}
+
+
+
+

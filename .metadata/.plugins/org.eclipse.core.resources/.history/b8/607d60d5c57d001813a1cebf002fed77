@@ -1,0 +1,17 @@
+package com.test2;
+
+public class Demo9 {
+
+	import java.awt.*;
+	import javax.swing.*;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+public MyPanel extends JPanel()
+{
+	
+}

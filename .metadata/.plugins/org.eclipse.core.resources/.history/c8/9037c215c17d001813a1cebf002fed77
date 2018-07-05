@@ -1,0 +1,88 @@
+/*
+ * 加深对事件处理机制的理解
+ * 1.通过上下左右键来控制小球的移动（位置）
+ */
+
+package com.test2;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.Event;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+public class Demo1_2 extends JFrame{
+
+	
+	MyPanel mp = null;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Demo1_2 demo = new Demo1_2();
+	}
+
+	//构造函数
+	public Demo1_2()
+	{
+		mp = new MyPanel();
+		
+		this.add(mp);
+		
+		
+		this.addKeyListener(mp);
+		
+		
+		
+		this.setSize(400,300);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+	}
+}
+
+//定义自己的面板
+class MyPanel extends JPanel implements KeyListener
+{
+	int x= 10; int y =10;
+	public void paint(Graphics g)
+	{
+		super.paint(g);
+		
+		g.fillOval(x, y, 20, 20);
+	}
+
+	//键的值被输出（打印）
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	//键被按下
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		//System.out.println("Pressed" + (char)e.getKeyCode());
+		
+		if(e.getKeyCode() == KeyEvent.VK_DOWN)
+		{
+			//System.out.println("12");
+			y++;
+		}
+		//调用repaint()函数，来重绘界面
+		this.repaint();
+	}
+
+	//键被释放
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

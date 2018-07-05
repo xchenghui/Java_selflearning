@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;x20180702&apos; to &apos;com.x20180702&apos;&#x0D;&#x0A;- Original project: &apos;ThreadPractice&apos;&#x0D;&#x0A;- Original element: &apos;ThreadPractice/src/x20180702&apos;&#x0D;&#x0A;- Renamed element: &apos;ThreadPractice/src/com.x20180702&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;x20180702&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;x20180702" name="com.x20180702" qualified="false" references="true" stamp="1530600382149" textual="false" version="1.0"/>
+</session>
